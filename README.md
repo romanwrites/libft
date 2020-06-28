@@ -2,6 +2,8 @@
 
 school 21 (42) libft project
 
+<img src="./image.jpg" width="960" height="563">
+
 ## Libc functions
 
 * [ft_memset](/libft/ft_memset.c)
