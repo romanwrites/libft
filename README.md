@@ -1,8 +1,10 @@
 # libft
 
-school 21 (42) libft project
+## school 21 (42) libft project
 
 <img src="./image.jpg" width="960" height="563">
+
+<span>Photo by <a href="https://unsplash.com/@alfonsmc10?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Alfons Morales</a> on <a href="/s/photos/library?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
 
 ## Libc functions
 
