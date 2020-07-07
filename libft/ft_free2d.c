@@ -19,7 +19,7 @@ char	**ft_free2d(char **strarr)
 	i = 0;
 	while (strarr[i])
 	{
-		free(strarr[i]);
+		ft_free_and_clear(strarr[i]);
 		i++;
 	}
 	free(strarr);
