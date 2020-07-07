@@ -66,6 +66,7 @@ SRCS = ft_atoi.c \
 	  ft_isxdigit.c \
 	  ft_strequ.c \
 	  ft_free2d.c \
+	  ft_strcpy.c \
 
 SRCSBONUS = ft_lstnew.c \
 	  ft_lstsize.c \

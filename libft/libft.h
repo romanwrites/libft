@@ -99,5 +99,6 @@ int					ft_iscntrl(int c);
 int					ft_isxdigit(int c);
 int					ft_strequ(char const *s1, char const *s2);
 char				**ft_free2d(char **strarr);
+void				ft_strcpy(char *dst, const char *src);
 
 #endif
