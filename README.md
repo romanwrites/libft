@@ -75,3 +75,5 @@
 * [ft_iscntrl](/libft/ft_isblank.c)
 * [ft_isxdigit](/libft/ft_isblank.c)
 * [ft_strequ](/libft/ft_strequ.c)
+* [ft_two_d_counter](/libft/ft_two_d_counter.c)
+* [ft_strcpy](/libft/ft_strcpy.c)
