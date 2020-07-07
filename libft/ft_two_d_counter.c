@@ -12,7 +12,7 @@
 
 #include "libft.h"
 
-size_t 	two_d_counter(char ***s)
+size_t 	ft_two_d_counter(char ***s)
 {
 	size_t	i;
 

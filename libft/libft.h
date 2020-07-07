@@ -100,6 +100,6 @@ int					ft_isxdigit(int c);
 int					ft_strequ(char const *s1, char const *s2);
 char				**ft_free2d(char **strarr);
 void				ft_strcpy(char *dst, const char *src);
-size_t				two_d_counter(char ***s);
+size_t				ft_two_d_counter(char ***s);
 
 #endif
