@@ -6,7 +6,7 @@
 /*   By: mkristie <kukinpower@ya.ru>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/05/10 14:28:00 by mkristie          #+#    #+#             */
-/*   Updated: 2020/06/28 03:29:04 by mkristie         ###   ########.fr       */
+/*   Updated: 2020/07/07 04:18:43 by mkristie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,7 @@ static int		ft_wordscount(char const *s, char c)
 	return (words);
 }
 
-static char		**ft_free2d(char **strarr)
+static char		**ft_free2d_split(char **strarr)
 {
 	int	i;
 
@@ -116,7 +116,7 @@ char			**ft_split(char const *s, char c)
 	{
 		if (!(strarr[i] = word_allocate((char *)(s + remember), c, 0, 0)))
 		{
-			ft_free2d(strarr);
+			ft_free2d_split(strarr);
 			return (NULL);
 		}
 		remember = word_end((char *)s, c, remember);

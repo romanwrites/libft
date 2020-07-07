@@ -6,7 +6,7 @@
 /*   By: mkristie <kukinpower@ya.ru>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/30 06:25:28 by mkristie          #+#    #+#             */
-/*   Updated: 2020/06/28 12:03:29 by mkristie         ###   ########.fr       */
+/*   Updated: 2020/07/07 04:17:48 by mkristie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -98,5 +98,6 @@ int					ft_isgraph(int c);
 int					ft_iscntrl(int c);
 int					ft_isxdigit(int c);
 int					ft_strequ(char const *s1, char const *s2);
+char				**ft_free2d(char **strarr);
 
 #endif
