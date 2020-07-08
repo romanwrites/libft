@@ -83,26 +83,31 @@ OBJS = $(SRCS:.c=.o)
 
 OBJSBONUS = $(SRCSBONUS:.c=.o)
 
-.PHONY: all, clean, fclean, re, bonus
+MTHR ?= -j
 
-all:	$(NAME)
+.PHONY: all clean fclean re bonus
+
+all:	#$(NAME)
+		@$(MAKE) $(MTHR) $(NAME)
 
 $(NAME): $(OBJS) $(LIBFT)
-		ar rc $(NAME) $(OBJS)
-		ranlib $(NAME)
-		@echo "Compiled"
+		@ar rc $(NAME) $(OBJS)
+		@ranlib $(NAME)
+		@echo "Libft compiled"
 
 bonus:	$(OBJSBONUS)
-		ar rc $(NAME) $(OBJSBONUS)
-		ranlib $(NAME)
+		@ar rc $(NAME) $(OBJSBONUS)
+		@ranlib $(NAME)
 
 %.o: %.c $(LIBFT)
-		gcc $(FLAGS) -c $< -o $@
+		@gcc $(FLAGS) -c $< -o $@
 
 clean:
-		/bin/rm -f $(OBJS) $(OBJSBONUS)
+		@/bin/rm -f $(OBJS) $(OBJSBONUS)
+		@echo "Libft cleaned"
 
 fclean:	clean
-		/bin/rm -f $(NAME)
+		@/bin/rm -f $(NAME)
+		@echo "Libft full cleaned"
 
 re:		fclean all
