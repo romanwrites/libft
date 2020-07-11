@@ -1,4 +1,4 @@
-# libft
+# 📚 libft
 
 ## school 21 (42) libft project
 
@@ -6,7 +6,7 @@
 
 <span>Photo by <a href="https://unsplash.com/@alfonsmc10?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Alfons Morales</a> on <a href="/s/photos/library?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
 
-## Libc functions
+## 0️⃣ Libc functions
 
 * [ft_memset](/libft/ft_memset.c)
 * [ft_bzero](/libft/ft_bzero.c)
@@ -34,7 +34,7 @@
 * [ft_calloc](/libft/ft_calloc.c)
 * [ft_strdup](/libft/ft_strdup.c)
 
-### Additional functions
+## 1️⃣ Additional functions
 
 * [ft_substr](/libft/ft_substr.c)
 * [ft_strjoin](/libft/ft_strjoin.c)
@@ -47,7 +47,7 @@
 * [ft_putendl_fd](/libft/ft_putendl_fd.c)
 * [ft_putnbr_fd](/libft/ft_putnbr_fd.c)
 
-## List functions
+## 2️⃣ List functions
 
 * [ft_lstnew](/libft/ft_lstnew.c)
 * [ft_lstdelone](/libft/ft_lstdelone.c)
@@ -56,7 +56,7 @@
 * [ft_lstiter](/libft/ft_lstiter.c)
 * [ft_lstmap](/libft/ft_lstmap.c)
 
-## My functions
+## 3️⃣ My functions
 
 * [ft_strjoin_free_s1](/libft/ft_strjoin_free_s1.c)
 * [ft_strjoin_free](/libft/ft_strjoin_free.c)
