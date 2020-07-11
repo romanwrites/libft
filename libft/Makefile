@@ -6,7 +6,7 @@
 #    By: mkristie <kukinpower@ya.ru>                +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/04/30 06:32:36 by mkristie          #+#    #+#              #
-#    Updated: 2020/07/07 04:18:00 by mkristie         ###   ########.fr        #
+#    Updated: 2020/07/11 21:52:49 by mkristie         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -83,12 +83,12 @@ OBJS = $(SRCS:.c=.o)
 
 OBJSBONUS = $(SRCSBONUS:.c=.o)
 
-MTHR ?= -j
+PARALLEL ?= -j
 
 .PHONY: all clean fclean re bonus
 
 all:	#$(NAME)
-		@$(MAKE) $(MTHR) $(NAME)
+		@$(MAKE) $(PARALLEL) $(NAME)
 
 $(NAME): $(OBJS) $(LIBFT)
 		@ar rc $(NAME) $(OBJS)
