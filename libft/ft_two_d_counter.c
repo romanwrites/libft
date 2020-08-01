@@ -6,13 +6,13 @@
 /*   By: mkristie <kukinpower@ya.ru>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/08 01:51:00 by mkristie          #+#    #+#             */
-/*   Updated: 2020/07/08 01:51:05 by mkristie         ###   ########.fr       */
+/*   Updated: 2020/08/01 19:06:10 by mkristie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t 	ft_two_d_counter(char ***s)
+size_t		ft_two_d_counter(char ***s)
 {
 	size_t	i;
 
