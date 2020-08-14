@@ -6,6 +6,10 @@
 
 <span>Photo by <a href="https://unsplash.com/@alfonsmc10?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Alfons Morales</a> on <a href="/s/photos/library?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
 
+Be carefull using double linked lists functions and my function while passing project. They are not asked to be written. I wrote them on my own to use in latest projects.
+
+By Odin by Thor, please use your brain!
+
 ## 0️⃣ Libc functions
 
 * [ft_memset](/libft/ft_memset.c)

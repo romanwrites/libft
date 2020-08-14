@@ -6,7 +6,7 @@
 /*   By: mkristie <kukinpower@ya.ru>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/30 06:25:28 by mkristie          #+#    #+#             */
-/*   Updated: 2020/07/07 04:17:48 by mkristie         ###   ########.fr       */
+/*   Updated: 2020/08/07 16:47:06 by mkristie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,8 +22,25 @@ typedef struct		s_list
 }					t_list;
 
 /*
-** Part 1
+** My double linked list
 */
+
+typedef struct				s_linked_list {
+	void					*content;
+	size_t					len;
+	struct s_linked_list	*next;
+	struct s_linked_list	*previous;
+}							t_linked_list;
+
+t_linked_list		*ft_my_lstnew(void *content, t_linked_list **prev);
+void	ft_my_lstadd_back(t_linked_list **lst, t_linked_list *new);
+t_linked_list		*ft_my_lstlast(t_linked_list *lst);
+void	ft_my_lstiter(t_linked_list *lst, void (*f)(void *));
+
+/*
+** Stdlib
+*/
+
 int					ft_atoi(const char *str);
 void				ft_bzero(void *s, size_t n);
 int					ft_isalnum(int c);
@@ -52,7 +69,7 @@ int					ft_toupper(int c);
 char				**ft_split(char const *s, char c);
 
 /*
-** Part 2
+** Additional useful functions
 */
 char				*ft_substr(char const *s, unsigned int start, size_t len);
 char				*ft_strjoin(char const *s1, char const *s2);
@@ -65,7 +82,7 @@ void				ft_putendl_fd(char *s, int fd);
 void				ft_putnbr_fd(int n, int fd);
 
 /*
-** Bonus part
+** Linked list functions
 */
 t_list				*ft_lstnew(void *content);
 int					ft_lstsize(t_list *lst);
