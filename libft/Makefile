@@ -6,7 +6,7 @@
 #    By: mkristie <kukinpower@ya.ru>                +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/04/30 06:32:36 by mkristie          #+#    #+#              #
-#    Updated: 2020/07/11 21:52:49 by mkristie         ###   ########.fr        #
+#    Updated: 2020/08/25 01:36:29 by mkristie         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -68,6 +68,7 @@ SRCS = ft_atoi.c \
 	  ft_free2d.c \
 	  ft_strcpy.c \
 	  ft_two_d_counter.c \
+	  ft_replace_char.c \
 
 SRCSBONUS = ft_lstnew.c \
 	  ft_lstsize.c \
