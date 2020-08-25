@@ -69,6 +69,7 @@ SRCS = ft_atoi.c \
 	  ft_strcpy.c \
 	  ft_two_d_counter.c \
 	  ft_replace_char.c \
+	  ft_replace.c \
 
 SRCSBONUS = ft_lstnew.c \
 	  ft_lstsize.c \

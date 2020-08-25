@@ -6,7 +6,7 @@
 /*   By: mkristie <kukinpower@ya.ru>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/30 06:25:28 by mkristie          #+#    #+#             */
-/*   Updated: 2020/08/25 01:37:26 by mkristie         ###   ########.fr       */
+/*   Updated: 2020/08/25 12:39:48 by mkristie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -120,5 +120,6 @@ void				ft_strcpy(char *dst, const char *src);
 size_t				ft_two_d_counter(char ***s);
 char				*ft_replace_char(const char *str, char *remove, \
 														char *paste);
+char			*ft_replace(const char *str, const char *rmv, const char *pst);
 
 #endif
