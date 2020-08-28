@@ -6,7 +6,7 @@
 /*   By: mkristie <kukinpower@ya.ru>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/30 06:25:28 by mkristie          #+#    #+#             */
-/*   Updated: 2020/08/28 14:48:17 by mkristie         ###   ########.fr       */
+/*   Updated: 2020/08/28 15:18:09 by mkristie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,6 +52,9 @@ t_btree		*btree_create_node(void *item);
 void		btree_apply_prefix(t_btree *root, void (*applyf)(void *));
 void		btree_apply_infix(t_btree *root, void (*applyf)(void *));
 void		btree_apply_suffix(t_btree *root, void (*applyf)(void *));
+void		btree_insert_data(t_btree **root, void *item, \
+								int (*cmpf)(void *, void *));
+
 
 /*
 ** Stdlib
@@ -138,5 +141,7 @@ char				*ft_replace_char(const char *str, char *remove, \
 														char *paste);
 char			*ft_replace(const char *str, const char *rmv, const char *pst);
 void			ft_lstrev(t_list **lst);
+int		ft_strcmp(const char *s1, const char *s2);
+void	ft_putstr(const char *s);
 
 #endif

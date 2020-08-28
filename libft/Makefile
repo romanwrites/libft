@@ -6,7 +6,7 @@
 #    By: mkristie <kukinpower@ya.ru>                +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/04/30 06:32:36 by mkristie          #+#    #+#              #
-#    Updated: 2020/08/28 14:48:45 by mkristie         ###   ########.fr        #
+#    Updated: 2020/08/28 15:18:14 by mkristie         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -74,6 +74,8 @@ SRCS = ft_atoi.c \
 	  btree_apply_prefix.c \
 	  btree_apply_infix.c \
 	  btree_apply_suffix.c \
+	  ft_strcmp.c \
+	  ft_putstr.c \
 
 SRCSBONUS = ft_lstnew.c \
 	  ft_lstsize.c \
