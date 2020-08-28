@@ -6,7 +6,7 @@
 /*   By: mkristie <kukinpower@ya.ru>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/30 06:25:28 by mkristie          #+#    #+#             */
-/*   Updated: 2020/08/28 14:00:45 by mkristie         ###   ########.fr       */
+/*   Updated: 2020/08/28 14:48:17 by mkristie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,6 +49,9 @@ typedef struct				s_btree
 }							t_btree;
 
 t_btree		*btree_create_node(void *item);
+void		btree_apply_prefix(t_btree *root, void (*applyf)(void *));
+void		btree_apply_infix(t_btree *root, void (*applyf)(void *));
+void		btree_apply_suffix(t_btree *root, void (*applyf)(void *));
 
 /*
 ** Stdlib
