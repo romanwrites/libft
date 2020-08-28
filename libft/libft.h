@@ -6,7 +6,7 @@
 /*   By: mkristie <kukinpower@ya.ru>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/30 06:25:28 by mkristie          #+#    #+#             */
-/*   Updated: 2020/08/28 01:07:35 by mkristie         ###   ########.fr       */
+/*   Updated: 2020/08/28 14:00:45 by mkristie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,9 +33,22 @@ typedef struct				s_linked_list {
 }							t_linked_list;
 
 t_linked_list		*ft_my_lstnew(void *content, t_linked_list **prev);
-void	ft_my_lstadd_back(t_linked_list **lst, t_linked_list *new);
+void				ft_my_lstadd_back(t_linked_list **lst, t_linked_list *new);
 t_linked_list		*ft_my_lstlast(t_linked_list *lst);
-void	ft_my_lstiter(t_linked_list *lst, void (*f)(void *));
+void				ft_my_lstiter(t_linked_list *lst, void (*f)(void *));
+
+/*
+** Binary trees
+*/
+
+typedef struct				s_btree
+{
+	void					*item;
+	struct s_btree			*left;
+	struct s_btree			*right;
+}							t_btree;
+
+t_btree		*btree_create_node(void *item);
 
 /*
 ** Stdlib
