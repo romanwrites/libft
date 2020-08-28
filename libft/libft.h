@@ -6,7 +6,7 @@
 /*   By: mkristie <kukinpower@ya.ru>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/30 06:25:28 by mkristie          #+#    #+#             */
-/*   Updated: 2020/08/25 12:39:48 by mkristie         ###   ########.fr       */
+/*   Updated: 2020/08/28 01:07:35 by mkristie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -121,5 +121,6 @@ size_t				ft_two_d_counter(char ***s);
 char				*ft_replace_char(const char *str, char *remove, \
 														char *paste);
 char			*ft_replace(const char *str, const char *rmv, const char *pst);
+void			ft_lstrev(t_list **lst);
 
 #endif
