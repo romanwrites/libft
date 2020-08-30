@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mkristie <kukinpower@ya.ru>                +#+  +:+       +#+        */
+/*   By: mkristie <mkristie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/30 06:25:28 by mkristie          #+#    #+#             */
-/*   Updated: 2020/08/28 15:24:55 by mkristie         ###   ########.fr       */
+/*   Updated: 2020/08/28 20:30:57 by mkristie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,7 +54,9 @@ void		btree_apply_infix(t_btree *root, void (*applyf)(void *));
 void		btree_apply_suffix(t_btree *root, void (*applyf)(void *));
 void		btree_insert_data(t_btree **root, void *item, \
 								int (*cmpf)(void *, void *));
-
+void		*btree_search_item(t_btree *root, void *data_ref, \
+                       			 int (*cmpf)(void *, void *));
+int			btree_level_count(t_btree *root);
 
 /*
 ** Stdlib

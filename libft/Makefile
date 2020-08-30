@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: mkristie <kukinpower@ya.ru>                +#+  +:+       +#+         #
+#    By: mkristie <mkristie@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/04/30 06:32:36 by mkristie          #+#    #+#              #
-#    Updated: 2020/08/28 15:18:14 by mkristie         ###   ########.fr        #
+#    Updated: 2020/08/30 18:07:43 by mkristie         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -70,12 +70,12 @@ SRCS = ft_atoi.c \
 	  ft_two_d_counter.c \
 	  ft_replace_char.c \
 	  ft_replace.c \
-	  btree_create_node.c \
-	  btree_apply_prefix.c \
-	  btree_apply_infix.c \
-	  btree_apply_suffix.c \
 	  ft_strcmp.c \
 	  ft_putstr.c \
+	  ft_my_lstadd_back.c \
+	  ft_my_lstiter.c \
+	  ft_my_lstlast.c \
+	  ft_my_lstnew.c \
 
 SRCSBONUS = ft_lstnew.c \
 	  ft_lstsize.c \
@@ -97,19 +97,19 @@ PARALLEL ?= -j
 .PHONY: all clean fclean re bonus
 
 all:	#$(NAME)
-		@$(MAKE) $(PARALLEL) $(NAME)
+		$(MAKE) $(PARALLEL) $(NAME)
 
 $(NAME): $(OBJS) $(LIBFT)
-		@ar rc $(NAME) $(OBJS)
-		@ranlib $(NAME)
+		ar rc $(NAME) $(OBJS)
+		ranlib $(NAME)
 		@echo "Libft compiled"
 
 bonus:	$(OBJSBONUS)
-		@ar rc $(NAME) $(OBJSBONUS)
+		ar rc $(NAME) $(OBJSBONUS)
 		@ranlib $(NAME)
 
 %.o: %.c $(LIBFT)
-		@gcc $(FLAGS) -c $< -o $@
+		gcc $(FLAGS) -c $< -o $@
 
 clean:
 		@/bin/rm -f $(OBJS) $(OBJSBONUS)

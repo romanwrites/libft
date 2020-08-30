@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_replace_char.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mkristie <kukinpower@ya.ru>                +#+  +:+       +#+        */
+/*   By: mkristie <mkristie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/08/25 00:53:43 by mkristie          #+#    #+#             */
-/*   Updated: 2020/08/25 01:36:53 by mkristie         ###   ########.fr       */
+/*   Updated: 2020/08/30 17:49:55 by mkristie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,6 @@
 static size_t	count_len_without_chr(const char *src, char c)
 {
 	size_t		i;
-	int			j;
 	size_t		l;
 
 	i = 0;
@@ -58,7 +57,7 @@ static char		*replace_chars(const char *src, char replace, char pst)
 {
 	size_t		len;
 	char		*res;
-	int			i;
+	size_t		i;
 
 	i = 0;
 	len = ft_strlen(src);
